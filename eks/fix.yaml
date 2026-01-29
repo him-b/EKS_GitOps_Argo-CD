@@ -1,0 +1,18 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: Mycluster-demo
+  region: us-east-1
+
+managedNodeGroups:
+  - name: go-app-final-v1
+    instanceType: t3.medium
+    desiredCapacity: 2
+    # This forces placement into the Public subnets shown in your map
+    privateNetworking: false
+    availabilityZones: ["us-east-1a", "us-east-1f"]
+    iam:
+      withAddonPolicies:
+        autoScaler: true
+        cloudWatch: true

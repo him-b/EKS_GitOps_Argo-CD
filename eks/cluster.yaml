@@ -1,0 +1,9 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: Mycluster-demo
+  region: us-east-1
+
+iam:
+  serviceRoleARN: arn:aws:iam::211186746805:role/EKSRole
