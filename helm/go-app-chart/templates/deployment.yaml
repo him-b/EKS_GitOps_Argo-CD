@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: go-web-app
-        image: himani708/go-app:{{ .Values.image.tag}}
+        image: himani708/go-web-app:{{ .Values.image.tag}}
         ports:
         - containerPort: 8080
