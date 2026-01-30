@@ -6,21 +6,21 @@ Project on Go lang,It uses the net/http package to serve HTTP requests.
 Application looks like below:
 <img width="940" height="469" alt="image" src="https://github.com/user-attachments/assets/a3c51891-073e-415e-b6c6-b6ecc5f47bb5" />
 
-1) Application is deployed on an EKS cluster usign 2 worker nodes.
+1) Application is deployed on an EKS cluster using 2 worker nodes.
 
-2) Tools to install before getting started:
-Docker
-helm
-kubectl
-eksctl- to create cluster have proper role attached, for more use  link: https://docs.aws.amazon.com/eks/latest/eksctl/installation.html
-aws cli
+2) Install before getting started:
+     Docker
+     helm
+     kubectl
+     eksctl- to create cluster have proper role attached, for more use  link: https://docs.aws.amazon.com/eks/latest/eksctl/installation.html
+     aws cli
 
 3) Check locally if application is working by using http://localhost:8080/courses (build docker image first) and run locally(app is exposed to 8080 port)
 
 4) Configure aws using aws configure, add access key and secret key of iam user.
 
-5) Run on terminal:  eksctl create cluster -f cluster.yaml(inside eks folder)
-                  eksctl create nodegroup -f fix.yaml(to create worker node)
+5) Run on terminal:  1) eksctl create cluster -f cluster.yaml(inside eks folder)
+                     2) eksctl create nodegroup -f fix.yaml(to create worker node)
    
 6) check if nodes are up:
         kubectl get nodes -o wide
@@ -33,7 +33,7 @@ kubectl get ing
 
 9) DNS mapping to be done as hosts is go-app.local
       nslookup <NLB IP>: gets an address, copy this address and paste in hosts along with host name as go-app.local
-         change it in sudo vim /etc/hosts
+         add this in host file command as: sudo vim /etc/hosts
 
 10) check if application is running by hitting: go-app.local/courses
 
