@@ -1,6 +1,7 @@
 Project on Go lang,It uses the net/http package to serve HTTP requests.
 
-<img width="681" height="131" alt="image" src="https://github.com/user-attachments/assets/a7ae8d9f-e34b-47bd-afb8-15315208c1c6" />
+<img width="656" height="136" alt="image" src="https://github.com/user-attachments/assets/3a4083d3-c31e-4d82-8075-9f4dfe0b44ce" />
+
 
 Application looks like below:
 <img width="940" height="469" alt="image" src="https://github.com/user-attachments/assets/a3c51891-073e-415e-b6c6-b6ecc5f47bb5" />
