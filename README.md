@@ -1,4 +1,8 @@
 Project on Go lang,It uses the net/http package to serve HTTP requests.
+
+<img width="681" height="131" alt="image" src="https://github.com/user-attachments/assets/a7ae8d9f-e34b-47bd-afb8-15315208c1c6" />
+
+Application looks like below:
 <img width="940" height="469" alt="image" src="https://github.com/user-attachments/assets/a3c51891-073e-415e-b6c6-b6ecc5f47bb5" />
 
 Application is deployed on an EKS cluster usign 2 worker nodes.
